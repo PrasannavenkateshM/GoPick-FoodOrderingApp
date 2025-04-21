@@ -19,3 +19,7 @@ function showsignup() {
 function hidesignup() {
     document.getElementById("signinpopup").style.display = "none";
 }
+
+function showverify() {
+    document.getElementById("loginPopup").style.display = "block";
+}
