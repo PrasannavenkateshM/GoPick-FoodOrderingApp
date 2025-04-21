@@ -1,0 +1,42 @@
+<!Doctype>
+<html>
+    <head>
+        <title>
+            Order here
+        </title>
+        <link rel="stylesheet" href="FirstPage1.css">
+    </head>
+    <body>
+        <div class="container">
+            <p class="welcome">Welcome Order here!</p>
+            <button class="login" onclick="showLogin()">Log in</button>
+            <button class="signup" onclick="showsignup()">Sign Up</button>
+        </div>
+
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="hideLogin()">&times;</span>
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </div>
+        </div>
+
+        <div id="signinpopup" class="signpopup">
+            <div class="signpopup-content">
+                <span class="close" onclick="hidesignup()">&times;</span>
+                <h2> Sign up</h2>
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Verify Mail</button>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+    
+</html>
